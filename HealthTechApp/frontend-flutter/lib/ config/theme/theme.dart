@@ -21,5 +21,17 @@ final theme = ThemeData(
       fontFamily: 'Inter',
       color: Color(0xFF364025),
     ),
+    bodySmall: TextStyle(
+      fontSize: 16,
+      fontFamily: 'Inter',
+      color: Color(0xFF8D957E),
+      fontWeight: FontWeight.w400,
+    ),
+    labelSmall: TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      color: Color(0xFFE8D957E),
+    ),
   ),
 );

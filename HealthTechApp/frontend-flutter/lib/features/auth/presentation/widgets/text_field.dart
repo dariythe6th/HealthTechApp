@@ -14,6 +14,7 @@ class TextFieldWidget extends StatefulWidget {
     this.onFieldSubmitted,
     required this.fieldKey,
     required this.hintText,
+    this.autoFocus,
   });
 
   final TextEditingController controller;
@@ -27,6 +28,7 @@ class TextFieldWidget extends StatefulWidget {
   final VoidCallback? onFieldSubmitted;
   final GlobalKey<FormFieldState>? fieldKey;
   final String hintText;
+  final bool? autoFocus;
 
   @override
   State<TextFieldWidget> createState() => _TextFieldWidgetState();
@@ -47,14 +49,12 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             : AutovalidateMode.disabled,
         validator: widget.validator,
         focusNode: widget.focusNode,
-        style: Theme.of(
-          context,
-        ).textTheme.titleSmall!.copyWith(color: Color(0xFFE8D957E)),
+        style: Theme.of(context).textTheme.labelSmall,
         cursorHeight: 15,
         controller: widget.controller,
         keyboardType: widget.textInputType,
         textInputAction: TextInputAction.done,
-        autofocus: false,
+        autofocus: widget.autoFocus ?? false,
         cursorColor: Color(0xFF364025),
         cursorErrorColor: Color(0xFFBA7551),
         obscureText: isPasswordvisible,
@@ -70,10 +70,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
         },
         decoration: InputDecoration(
           hintText: widget.hintText,
-          hintStyle: Theme.of(context).textTheme.headlineSmall!.copyWith(
-            color: Color(0xFF8D957E),
-            fontWeight: FontWeight.w400,
-          ),
+          hintStyle: Theme.of(context).textTheme.bodySmall,
           errorMaxLines: 1,
           helperText: ' ',
           contentPadding: EdgeInsets.all(16),

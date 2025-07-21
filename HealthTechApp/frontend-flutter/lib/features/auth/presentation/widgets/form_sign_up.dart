@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:health_app/features/auth/widgets/text_field.dart';
+import 'package:health_app/features/auth/presentation/widgets/text_field.dart';
 
 class FormWidgetSignUp extends StatelessWidget {
   const FormWidgetSignUp({

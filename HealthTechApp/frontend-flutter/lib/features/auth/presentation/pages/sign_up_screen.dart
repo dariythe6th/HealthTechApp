@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:health_app/features/auth/presentation/widgets/elevated_button.dart';
+import 'package:health_app/%20config/theme/widgets/primary_elevated_button.dart';
 import 'package:health_app/features/auth/presentation/widgets/form_sign_up.dart';
 import 'package:health_app/%20config/router/router.gr.dart';
 import 'package:talker_flutter/talker_flutter.dart';
@@ -58,8 +58,8 @@ class _SignUpScreenViewState extends State<SignUpScreen> {
     await Future.delayed(const Duration(seconds: 1));
     GetIt.I<Talker>().debug('Форма валидна, можно отправлять данные');
 
-    // if (!mounted) return;
-    // context.router.replace(HomeRoute());
+    if (!mounted) return;
+    context.router.replace(FormRoute());
   }
 
   @override
@@ -110,7 +110,7 @@ class _SignUpScreenViewState extends State<SignUpScreen> {
                 const SizedBox(height: 23),
                 _isLoading
                     ? const Center(child: CircularProgressIndicator())
-                    : ElevatedButtonWidget(
+                    : PrimaryElevatedButton(
                         text: 'Sign Up',
                         onPressed: _onSignUpPressed,
                       ),

@@ -49,7 +49,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             : AutovalidateMode.disabled,
         validator: widget.validator,
         focusNode: widget.focusNode,
-        style: Theme.of(context).textTheme.labelSmall,
+        style: Theme.of(context).textTheme.labelMedium,
         cursorHeight: 15,
         controller: widget.controller,
         keyboardType: widget.textInputType,

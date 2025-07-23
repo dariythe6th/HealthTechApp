@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:health_app/features/auth/presentation/widgets/elevated_button.dart';
+import 'package:health_app/%20config/theme/widgets/primary_elevated_button.dart';
 import 'package:health_app/features/auth/presentation/widgets/form_log_in.dart';
 import 'package:health_app/%20config/router/router.gr.dart';
 import 'package:talker_flutter/talker_flutter.dart';
@@ -135,7 +135,7 @@ class _LogInScreenViewState extends State<LogInScreen> {
               ),
 
               const SizedBox(height: 23),
-              ElevatedButtonWidget(
+              PrimaryElevatedButton(
                 text: 'Log In',
                 onPressed: _isChecked
                     ? _onLoginPressed

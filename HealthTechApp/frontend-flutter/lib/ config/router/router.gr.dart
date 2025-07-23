@@ -8,18 +8,20 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i4;
+import 'package:auto_route/auto_route.dart' as _i5;
 import 'package:health_app/features/auth/presentation/pages/log_in_screen.dart'
-    as _i2;
-import 'package:health_app/features/auth/presentation/pages/sign_up_screen.dart'
     as _i3;
+import 'package:health_app/features/auth/presentation/pages/sign_up_screen.dart'
+    as _i4;
 import 'package:health_app/features/form/presentation/pages/form_screen.dart'
     as _i1;
+import 'package:health_app/features/home/presentation/pages/home_screen.dart'
+    as _i2;
 
 /// generated route for
 /// [_i1.FormScreen]
-class FormRoute extends _i4.PageRouteInfo<void> {
-  const FormRoute({List<_i4.PageRouteInfo>? children})
+class FormRoute extends _i5.PageRouteInfo<void> {
+  const FormRoute({List<_i5.PageRouteInfo>? children})
       : super(
           FormRoute.name,
           initialChildren: children,
@@ -27,7 +29,7 @@ class FormRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'FormRoute';
 
-  static _i4.PageInfo page = _i4.PageInfo(
+  static _i5.PageInfo page = _i5.PageInfo(
     name,
     builder: (data) {
       return const _i1.FormScreen();
@@ -36,9 +38,28 @@ class FormRoute extends _i4.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i2.LogInScreen]
-class LogInRoute extends _i4.PageRouteInfo<void> {
-  const LogInRoute({List<_i4.PageRouteInfo>? children})
+/// [_i2.HomeScreen]
+class HomeRoute extends _i5.PageRouteInfo<void> {
+  const HomeRoute({List<_i5.PageRouteInfo>? children})
+      : super(
+          HomeRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'HomeRoute';
+
+  static _i5.PageInfo page = _i5.PageInfo(
+    name,
+    builder: (data) {
+      return const _i2.HomeScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [_i3.LogInScreen]
+class LogInRoute extends _i5.PageRouteInfo<void> {
+  const LogInRoute({List<_i5.PageRouteInfo>? children})
       : super(
           LogInRoute.name,
           initialChildren: children,
@@ -46,18 +67,18 @@ class LogInRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'LogInRoute';
 
-  static _i4.PageInfo page = _i4.PageInfo(
+  static _i5.PageInfo page = _i5.PageInfo(
     name,
     builder: (data) {
-      return const _i2.LogInScreen();
+      return const _i3.LogInScreen();
     },
   );
 }
 
 /// generated route for
-/// [_i3.SignUpScreen]
-class SignUpRoute extends _i4.PageRouteInfo<void> {
-  const SignUpRoute({List<_i4.PageRouteInfo>? children})
+/// [_i4.SignUpScreen]
+class SignUpRoute extends _i5.PageRouteInfo<void> {
+  const SignUpRoute({List<_i5.PageRouteInfo>? children})
       : super(
           SignUpRoute.name,
           initialChildren: children,
@@ -65,10 +86,10 @@ class SignUpRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'SignUpRoute';
 
-  static _i4.PageInfo page = _i4.PageInfo(
+  static _i5.PageInfo page = _i5.PageInfo(
     name,
     builder: (data) {
-      return const _i3.SignUpScreen();
+      return const _i4.SignUpScreen();
     },
   );
 }

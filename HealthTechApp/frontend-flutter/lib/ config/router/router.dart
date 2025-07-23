@@ -7,7 +7,8 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
     AutoRoute(page: FormRoute.page, path: '/form'),
-    AutoRoute(page: LogInRoute.page, path: '/'),
+    AutoRoute(page: LogInRoute.page, path: '/logIn'),
     AutoRoute(page: SignUpRoute.page, path: '/signUp'),
+    AutoRoute(page: HomeRoute.page, path: '/'),
   ];
 }

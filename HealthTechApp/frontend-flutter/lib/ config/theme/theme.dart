@@ -58,6 +58,12 @@ final theme = ThemeData(
       color: Color(0xFF4B3D1A),
       fontWeight: FontWeight.w500,
     ),
+    titleLarge: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+      color: Color(0xFF1D1B20),
+    ),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
